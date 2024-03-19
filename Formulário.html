@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salários</title>
+    <figure>
+        <img src="images/salario-minimo.png" alt="." title="." width="570px">
+    </figure>
+</head>
+<body>
+    <h1>Cálculo de Salários</h1>
+
+    <form id="salarioForm" action="salario.php">
+        <label for="nomeFuncionario">Funcionário:</label><br>
+        <input type="text" id="nomeFuncionario" name="nomeFuncionario"><br>
+
+        <label for="dtAdmissao">Data de Admissão:</label><br>
+        <input type="date" id="dtAdmissao" name="dtAdmissao"><br>
+
+        <label for="salario">Salário:</label><br>
+        <input type="number" id="salario" name="salario"><br>
+
+        <label for="contato">Contato:</label><br>
+        <input type="text" id="contato" name="contato"><br>
+
+        <button type="button" onclick="calcularSalario()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
